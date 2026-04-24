@@ -1,36 +1,37 @@
 public class Filme {
 
-    private String Titulo;
-    private String Genero;
-    private String Valor;
 
-    public Filme(String titulo, String valor, String genero) {
-        Titulo = titulo;
-        Valor = valor;
-        Genero = genero;
+    private String titulo;
+    private String genero;
+    private int valor;
+
+    public Filme(String titulo, String genero, int valor) {
+        this.titulo = titulo;
+        this.genero = genero;
+        this.valor = valor;
     }
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
     public void setTitulo(String titulo) {
-        Titulo = titulo;
+        this.titulo = titulo;
     }
 
     public String getGenero() {
-        return Genero;
+        return genero;
     }
 
     public void setGenero(String genero) {
-        Genero = genero;
+        this.genero = genero;
     }
 
-    public String getValor() {
-        return Valor;
+    public int getValor() {
+        return valor;
     }
 
-    public void setValor(String valor) {
-        Valor = valor;
+    public void setValor(int valor) {
+        this.valor = valor;
     }
 }
