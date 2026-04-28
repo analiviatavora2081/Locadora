@@ -34,4 +34,10 @@ public class Filme {
     public void setValor(int valor) {
         this.valor = valor;
     }
+    public String exibirdetalhes() {
+        return "titulo: " + this.titulo + "Genero: " + this.genero + "valor: " + this.valor;
+    }
+    public void aplicardesconto(double percentual){
+        valor = valor - (valor * percentual / 100);
+    }
 }
